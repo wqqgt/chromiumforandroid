@@ -1,0 +1,148 @@
+// Copyright (c) 2013 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+#ifndef MEDIA_BASE_ANDROID_MEDIA_CODEC_BRIDGE_H_
+#define MEDIA_BASE_ANDROID_MEDIA_CODEC_BRIDGE_H_
+
+#include <stddef.h>
+#include <stdint.h>
+
+#include <string>
+#include <vector>
+
+#include "base/macros.h"
+#include "base/time/time.h"
+#include "media/base/media_export.h"
+#include "ui/gfx/geometry/size.h"
+
+namespace media {
+
+class EncryptionScheme;
+struct SubsampleEntry;
+
+// These must be in sync with MediaCodecBridge.MEDIA_CODEC_XXX constants in
+// MediaCodecBridge.java.
+enum MediaCodecStatus {
+  MEDIA_CODEC_OK,
+  MEDIA_CODEC_DEQUEUE_INPUT_AGAIN_LATER,
+  MEDIA_CODEC_DEQUEUE_OUTPUT_AGAIN_LATER,
+  MEDIA_CODEC_OUTPUT_BUFFERS_CHANGED,
+  MEDIA_CODEC_OUTPUT_FORMAT_CHANGED,
+  MEDIA_CODEC_NO_KEY,
+  MEDIA_CODEC_ERROR
+};
+
+// An interface for a bridge to an Android MediaCodec.
+class MEDIA_EXPORT MediaCodecBridge {
+ public:
+  MediaCodecBridge() = default;
+  virtual ~MediaCodecBridge() = default;
+
+  // Calls start() against the media codec instance. Returns whether media
+  // codec was successfully started.
+  virtual bool Start() = 0;
+
+  // Finishes the decode/encode session. The instance remains active
+  // and ready to be StartAudio/Video()ed again. HOWEVER, due to the buggy
+  // vendor's implementation , b/8125974, Stop() -> StartAudio/Video() may not
+  // work on some devices. For reliability, Stop() -> delete and recreate new
+  // instance -> StartAudio/Video() is recommended.
+  virtual void Stop() = 0;
+
+  // Calls flush() on the MediaCodec. All indices previously returned in calls
+  // to DequeueInputBuffer() and DequeueOutputBuffer() become invalid. Please
+  // note that this clears all the inputs in the media codec. In other words,
+  // there will be no outputs until new input is provided. Returns
+  // MEDIA_CODEC_ERROR if an unexpected error happens, or MEDIA_CODEC_OK
+  // otherwise.
+  virtual MediaCodecStatus Flush() = 0;
+
+  // Used for getting the output size. This is valid after DequeueInputBuffer()
+  // returns a format change by returning INFO_OUTPUT_FORMAT_CHANGED.
+  // Returns MEDIA_CODEC_ERROR if an error occurs, or MEDIA_CODEC_OK otherwise.
+  virtual MediaCodecStatus GetOutputSize(gfx::Size* size) = 0;
+
+  // Used for checking for new sampling rate after DequeueInputBuffer() returns
+  // INFO_OUTPUT_FORMAT_CHANGED
+  // Returns MEDIA_CODEC_ERROR if an error occurs, or MEDIA_CODEC_OK otherwise.
+  virtual MediaCodecStatus GetOutputSamplingRate(int* sampling_rate) = 0;
+
+  // Fills |channel_count| with the number of audio channels. Useful after
+  // INFO_OUTPUT_FORMAT_CHANGED.
+  // Returns MEDIA_CODEC_ERROR if an error occurs, or MEDIA_CODEC_OK otherwise.
+  virtual MediaCodecStatus GetOutputChannelCount(int* channel_count) = 0;
+
+  // Submits a byte array to the given input buffer. Call this after getting an
+  // available buffer from DequeueInputBuffer(). If |data| is NULL, assume the
+  // input buffer has already been populated (but still obey |size|).
+  // |data_size| must be less than kint32max (because Java).
+  virtual MediaCodecStatus QueueInputBuffer(
+      int index,
+      const uint8_t* data,
+      size_t data_size,
+      base::TimeDelta presentation_time) = 0;
+
+  // As above but for encrypted buffers. NULL |subsamples| indicates the
+  // whole buffer is encrypted.
+  virtual MediaCodecStatus QueueSecureInputBuffer(
+      int index,
+      const uint8_t* data,
+      size_t data_size,
+      const std::string& key_id,
+      const std::string& iv,
+      const std::vector<SubsampleEntry>& subsamples,
+      const EncryptionScheme& encryption_scheme,
+      base::TimeDelta presentation_time) = 0;
+
+  // Submits an empty buffer with the END_OF_STREAM flag set.
+  virtual void QueueEOS(int input_buffer_index) = 0;
+
+  // Returns:
+  // MEDIA_CODEC_OK if an input buffer is ready to be filled with valid data,
+  // MEDIA_CODEC_ENQUEUE_INPUT_AGAIN_LATER if no such buffer is available, or
+  // MEDIA_CODEC_ERROR if unexpected error happens.
+  virtual MediaCodecStatus DequeueInputBuffer(base::TimeDelta timeout,
+                                              int* index) = 0;
+
+  // Dequeues an output buffer, block for up to |timeout|.
+  // Returns the status of this operation. If OK is returned, the output
+  // parameters should be populated. Otherwise, the values of output parameters
+  // should not be used.  Output parameters other than index/offset/size are
+  // optional and only set if not NULL.
+  virtual MediaCodecStatus DequeueOutputBuffer(
+      base::TimeDelta timeout,
+      int* index,
+      size_t* offset,
+      size_t* size,
+      base::TimeDelta* presentation_time,
+      bool* end_of_stream,
+      bool* key_frame) = 0;
+
+  // Returns the buffer to the codec. If you previously specified a surface when
+  // configuring this video decoder you can optionally render the buffer.
+  virtual void ReleaseOutputBuffer(int index, bool render) = 0;
+
+  // Returns an input buffer's base pointer and capacity.
+  virtual MediaCodecStatus GetInputBuffer(int input_buffer_index,
+                                          uint8_t** data,
+                                          size_t* capacity) = 0;
+
+  // Copies |num| bytes from output buffer |index|'s |offset| into the memory
+  // region pointed to by |dst|. To avoid overflows, the size of both source
+  // and destination must be at least |num| bytes, and should not overlap.
+  // Returns MEDIA_CODEC_ERROR if an error occurs, or MEDIA_CODEC_OK otherwise.
+  virtual MediaCodecStatus CopyFromOutputBuffer(int index,
+                                                size_t offset,
+                                                void* dst,
+                                                size_t num) = 0;
+
+  // Gets the component name. Before API level 18 this returns an empty string.
+  virtual std::string GetName() = 0;
+
+  DISALLOW_COPY_AND_ASSIGN(MediaCodecBridge);
+};
+
+}  // namespace media
+
+#endif  // MEDIA_BASE_ANDROID_MEDIA_CODEC_BRIDGE_H_
