@@ -17,6 +17,8 @@ import android.widget.LinearLayout;
 
 import org.chromium.base.ApiCompatibilityUtils;
 
+import org.chromium.chrome.lib.web_contents_delegate_android.R;
+
 /**
  * The adapter used to populate ColorPickerSimple.
  */

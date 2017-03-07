@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.chromium.chrome.lib.web_contents_delegate_android.R;
+
 /**
  * UI for the color chooser that shows on the Android platform as a result of
  * &lt;input type=color &gt; form element.

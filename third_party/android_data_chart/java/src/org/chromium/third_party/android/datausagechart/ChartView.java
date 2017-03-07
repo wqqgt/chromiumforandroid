@@ -25,7 +25,7 @@ import android.view.View;
 import android.view.ViewDebug;
 import android.widget.FrameLayout;
 
-import org.chromium.third_party.android.R;
+import org.chromium.chrome.lib.android_data_chart.R;
 
 /**
  * Container for two-dimensional chart, drawn with a combination of {@link ChartNetworkSeriesView}

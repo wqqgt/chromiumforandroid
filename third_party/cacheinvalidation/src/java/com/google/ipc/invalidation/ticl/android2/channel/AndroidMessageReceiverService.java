@@ -15,6 +15,10 @@
  */
 package com.google.ipc.invalidation.ticl.android2.channel;
 
+import android.content.Context;
+import android.content.Intent;
+import android.util.Base64;
+
 import com.google.android.gcm.GCMRegistrar;
 import com.google.ipc.invalidation.external.client.SystemResources.Logger;
 import com.google.ipc.invalidation.external.client.android.service.AndroidLogger;
@@ -24,10 +28,6 @@ import com.google.ipc.invalidation.ticl.android2.ProtocolIntents;
 import com.google.ipc.invalidation.ticl.android2.channel.AndroidChannelConstants.C2dmConstants;
 import com.google.ipc.invalidation.ticl.proto.AndroidChannel.AddressedAndroidMessage;
 import com.google.ipc.invalidation.util.ProtoWrapper.ValidationException;
-
-import android.content.Context;
-import android.content.Intent;
-import android.util.Base64;
 
 
 /**

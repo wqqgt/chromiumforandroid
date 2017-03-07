@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.util.AttributeSet;
 import android.widget.ListView;
 
+import org.chromium.chrome.lib.web_contents_delegate_android.R;
 import org.chromium.components.web_contents_delegate_android.ColorSuggestionListAdapter.OnColorSuggestionClickListener;
 
 /**

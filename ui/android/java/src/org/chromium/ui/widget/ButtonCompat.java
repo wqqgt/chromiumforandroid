@@ -89,7 +89,8 @@ public class ButtonCompat extends Button {
         mColor = color;
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            updateButtonBackgroundL();
+            //TODO wangguotao
+            //updateButtonBackgroundL();
         } else {
             updateButtonBackgroundPreL();
         }
