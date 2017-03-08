@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"עדכן הרשאות"</string>
+<string name="options_homepage_title">"דף הבית"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome Sync"</string>
+<string name="sync_confirmation_chrome_sync_message">"‏הסימניות, ההיסטוריה, הסיסמאות והגדרות נוספות יסונכרנו עם חשבון Google, כך שתוכל להשתמש בהם בכל המכשירים שלך."</string>
+<string name="sync_confirmation_personalize_services_title">"‏התאמה אישית של שירותי Google"</string>
+<string name="sync_confirmation_personalize_services_body">"‏חברת Google עשויה להשתמש בהיסטוריית הגלישה שלך לצורך התאמה אישית של חיפוש Google, מודעות Google ושירותי Google אחרים"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"מנהל המערכת שלך השבית את הסנכרון"</string>
+</resources>

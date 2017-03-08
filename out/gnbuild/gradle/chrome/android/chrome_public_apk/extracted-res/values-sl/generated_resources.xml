@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Posodobi dovoljenja"</string>
+<string name="options_homepage_title">"Domača stran"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Sinhronizacija za Chrome"</string>
+<string name="sync_confirmation_chrome_sync_message">"Vaši zaznamki, zgodovina, gesla in druge nastavitve bodo sinhronizirani z Google Računom, tako da jih boste lahko uporabljali v vseh svojih napravah."</string>
+<string name="sync_confirmation_personalize_services_title">"Prilagajanje Googlovih storitev"</string>
+<string name="sync_confirmation_personalize_services_body">"Google lahko vašo zgodovino brskanja uporabi za prilagajanje Iskanja Google, oglasov in drugih Googlovih storitev."</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Sinhronizacijo je onemogočil skrbnik"</string>
+</resources>

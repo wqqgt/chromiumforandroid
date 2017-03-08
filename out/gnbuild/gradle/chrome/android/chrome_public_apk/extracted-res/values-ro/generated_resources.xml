@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Actualizează permisiunile"</string>
+<string name="options_homepage_title">"Pagina de pornire"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome Sync"</string>
+<string name="sync_confirmation_chrome_sync_message">"Marcajele, istoricul, parolele și alte setări vor fi sincronizate cu Contul Google, pentru a le putea folosi pe toate dispozitivele"</string>
+<string name="sync_confirmation_personalize_services_title">"Personalizează serviciile Google"</string>
+<string name="sync_confirmation_personalize_services_body">"Google poate folosi istoricul de navigare pentru a personaliza Căutarea, anunțurile și alte servicii Google"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Sincronizarea este dezactivată de administrator"</string>
+</resources>

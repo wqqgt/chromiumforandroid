@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Engedélyek frissítése"</string>
+<string name="options_homepage_title">"Kezdőoldal"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome - szinkronizálás"</string>
+<string name="sync_confirmation_chrome_sync_message">"A böngésző szinkronizálni fogja a könyvjelzőket, az előzményeket, a jelszavakat és az egyéb beállításokat Google-fiókjával, hogy bármelyik eszközén hozzájuk férjen."</string>
+<string name="sync_confirmation_personalize_services_title">"A Google-szolgáltatások személyre szabása"</string>
+<string name="sync_confirmation_personalize_services_body">"A Google felhasználhatja az Ön böngészési előzményeit a Keresés, a hirdetések és más Google-szolgáltatások személyre szabására"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"A szinkronizálást letiltotta a rendszergazda"</string>
+</resources>

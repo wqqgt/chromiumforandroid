@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Oppdater tillatelser"</string>
+<string name="options_homepage_title">"Startside"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome-synkronisering"</string>
+<string name="sync_confirmation_chrome_sync_message">"Bokmerkene, loggoppføringene, passordene og de andre innstillingene dine blir synkronisert med Google-kontoen din, slik at du kan bruke dem på alle enhetene dine."</string>
+<string name="sync_confirmation_personalize_services_title">"Tilpass Google-tjenester"</string>
+<string name="sync_confirmation_personalize_services_body">"Google kan bruke nettlesingsloggen din for å gi Søk, annonser og andre Google-tjenester et personlig preg"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Administratoren din har slått av synkronisering"</string>
+</resources>

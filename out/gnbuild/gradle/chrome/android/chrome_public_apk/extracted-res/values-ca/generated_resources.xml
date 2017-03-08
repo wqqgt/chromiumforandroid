@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Actualitza els permisos"</string>
+<string name="options_homepage_title">"Pàgina d\'inici"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Sincronització de Google Chrome"</string>
+<string name="sync_confirmation_chrome_sync_message">"Les adreces d\'interès, l\'historial, les contrasenyes i altres opcions de configuració se sincronitzaran amb el vostre compte de Google, perquè els pugueu utilitzar en tots els dispositius."</string>
+<string name="sync_confirmation_personalize_services_title">"Personalitzeu els serveis de Google"</string>
+<string name="sync_confirmation_personalize_services_body">"És possible que Google utilitzi el vostre historial de navegació per personalitzar la Cerca, els anuncis i altres serveis de Google"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"L\'administrador ha desactivat la sincronització"</string>
+</resources>

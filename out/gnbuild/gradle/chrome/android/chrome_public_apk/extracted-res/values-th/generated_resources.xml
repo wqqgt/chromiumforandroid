@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"อัปเดตสิทธิ์"</string>
+<string name="options_homepage_title">"หน้าแรก"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"การทำข้อมูลให้ตรงกันของ Chrome"</string>
+<string name="sync_confirmation_chrome_sync_message">"บุ๊กมาร์ก ประวัติการเข้าชม รหัสผ่าน และการตั้งค่าอื่นๆ จะซิงค์กับบัญชี Google เพื่อให้คุณสามารถใช้ข้อมูลเหล่านี้ได้กับอุปกรณ์ทุกเครื่อง"</string>
+<string name="sync_confirmation_personalize_services_title">"ปรับเปลี่ยนบริการ Google ในแบบของคุณ"</string>
+<string name="sync_confirmation_personalize_services_body">"Google อาจใช้ประวัติการท่องเว็บของคุณเพื่อปรับเปลี่ยนการค้นหา โฆษณา และบริการอื่นๆ ของ Google ในแบบของคุณ"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"ผู้ดูแลระบบปิดใช้การซิงค์"</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"권한 업데이트"</string>
+<string name="options_homepage_title">"홈페이지"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"크롬 동기화"</string>
+<string name="sync_confirmation_chrome_sync_message">"북마크, 방문 기록, 비밀번호, 기타 설정이 Google 계정에 동기화되므로 모든 기기에서 사용할 수 있습니다."</string>
+<string name="sync_confirmation_personalize_services_title">"Google 서비스 맞춤설정"</string>
+<string name="sync_confirmation_personalize_services_body">"Google에서 검색, 광고 및 다른 Google 서비스를 맞춤설정하기 위하여 내 인터넷 사용 기록을 사용할 수 있습니다."</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"관리자가 동기화를 사용 중지했습니다."</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Cập nhật quyền"</string>
+<string name="options_homepage_title">"Trang chủ"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome Sync"</string>
+<string name="sync_confirmation_chrome_sync_message">"Dấu trang, lịch sử, mật khẩu và các cài đặt khác sẽ được đồng bộ hóa với Tài khoản Google của bạn để bạn có thể sử dụng chúng trên tất cả thiết bị của mình."</string>
+<string name="sync_confirmation_personalize_services_title">"Cá nhân hóa dịch vụ của Google"</string>
+<string name="sync_confirmation_personalize_services_body">"Google có thể sử dụng lịch sử duyệt web của bạn để cá nhân hóa Tìm kiếm, quảng cáo và các dịch vụ khác của Google"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Đồng bộ hóa bị quản trị viên của bạn tắt"</string>
+</resources>

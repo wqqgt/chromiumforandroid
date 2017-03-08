@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Aktualizovať povolenia"</string>
+<string name="options_homepage_title">"Domovská stránka"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome Sync"</string>
+<string name="sync_confirmation_chrome_sync_message">"Záložky, história, heslá a ďalšie nastavenia budú synchronizované s vaším účtom Google a budete ich môcť použiť na všetkých zariadeniach"</string>
+<string name="sync_confirmation_personalize_services_title">"Prispôsobenie služieb Google"</string>
+<string name="sync_confirmation_personalize_services_body">"Google môže používať vašu históriu prehliadania na prispôsobenie Vyhľadávania, reklám a ďalších služieb Google"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Synchronizácia je zakázaná správcom"</string>
+</resources>

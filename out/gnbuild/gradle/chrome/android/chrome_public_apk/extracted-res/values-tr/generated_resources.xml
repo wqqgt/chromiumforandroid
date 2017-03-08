@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"İzinleri güncelle"</string>
+<string name="options_homepage_title">"Ana sayfa"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome Senkronizasyonu"</string>
+<string name="sync_confirmation_chrome_sync_message">"Yer işaretleriniz, geçmişiniz, şifreleriniz ve diğer ayarlarınız tüm cihazlarınızda kullanabilmeniz için Google Hesabınızla senkronize edilecek"</string>
+<string name="sync_confirmation_personalize_services_title">"Google hizmetlerini kişiselleştirme"</string>
+<string name="sync_confirmation_personalize_services_body">"Google; Arama, reklamlar ve diğer Google hizmetlerini kişiselleştirmek için tarama geçmişinizi kullanabilir"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Yöneticiniz senkronizasyonu devre dışı bıraktı"</string>
+</resources>

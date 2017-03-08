@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"権限を更新"</string>
+<string name="options_homepage_title">"ホームページ"</string>
+<string name="autofill_from_google_account">"Google ペイメント"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome の同期"</string>
+<string name="sync_confirmation_chrome_sync_message">"ブックマーク、履歴、パスワード、その他の設定が Google アカウントに同期され、どの端末でも利用できるようになります"</string>
+<string name="sync_confirmation_personalize_services_title">"Google サービスのカスタマイズ"</string>
+<string name="sync_confirmation_personalize_services_body">"検索、広告、その他の Google サービスをカスタマイズする目的で、Google が閲覧履歴を使用することがあります"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"同期は管理者により無効にされています"</string>
+</resources>

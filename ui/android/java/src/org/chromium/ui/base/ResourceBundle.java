@@ -20,7 +20,7 @@ import java.util.Arrays;
  * library.
  */
 @JNINamespace("ui")
-final class ResourceBundle {
+public final class ResourceBundle {
     private ResourceBundle() {}
 
     @CalledByNative

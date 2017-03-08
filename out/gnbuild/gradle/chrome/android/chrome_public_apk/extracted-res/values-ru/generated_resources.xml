@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Обновить разрешения"</string>
+<string name="options_homepage_title">"Главная страница"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Синхронизация Chrome"</string>
+<string name="sync_confirmation_chrome_sync_message">"Пароли, закладки, история и другие параметры будут синхронизированы с аккаунтом Google, чтобы у вас был доступ к ним на любом устройстве."</string>
+<string name="sync_confirmation_personalize_services_title">"Персонализировать сервисы Google"</string>
+<string name="sync_confirmation_personalize_services_body">"Google может использовать историю просмотров для персонализации Поиска, Рекламы и других сервисов."</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Ваш администратор отключил синхронизацию"</string>
+</resources>

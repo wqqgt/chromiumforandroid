@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Actualizar permisos"</string>
+<string name="options_homepage_title">"Página de inicio"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Sincronización de Chrome"</string>
+<string name="sync_confirmation_chrome_sync_message">"Tus marcadores, historial, contraseñas y otros ajustes se sincronizarán con tu cuenta de Google para que puedas utilizarlos en todos tus dispositivos"</string>
+<string name="sync_confirmation_personalize_services_title">"Personalizar los servicios de Google"</string>
+<string name="sync_confirmation_personalize_services_body">"Google puede utilizar tu historial de navegación para personalizar la Búsqueda, los anuncios y otros servicios de Google"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"El administrador ha inhabilitado la sincronización"</string>
+</resources>

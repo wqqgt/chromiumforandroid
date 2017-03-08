@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Ενημέρωση αδειών"</string>
+<string name="options_homepage_title">"Αρχική σελίδα"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Συγχρονισμός Chrome"</string>
+<string name="sync_confirmation_chrome_sync_message">"Οι σελιδοδείκτες, το ιστορικό, οι κωδικοί πρόσβασης και άλλες ρυθμίσεις σας θα συγχρονιστούν στο Λογαριασμό σας Google, ώστε η χρήση τους να είναι δυνατή σε όλες τις συσκευές σας"</string>
+<string name="sync_confirmation_personalize_services_title">"Εξατομίκευση υπηρεσιών Google"</string>
+<string name="sync_confirmation_personalize_services_body">"Η Google μπορεί να χρησιμοποιεί το ιστορικό περιήγησής σας για την εξατομίκευση της Αναζήτησης, των διαφημίσεων και άλλων υπηρεσιών Google"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Ο συγχρονισμός έχει απενεργοποιηθεί από τον διαχειριστή σας"</string>
+</resources>

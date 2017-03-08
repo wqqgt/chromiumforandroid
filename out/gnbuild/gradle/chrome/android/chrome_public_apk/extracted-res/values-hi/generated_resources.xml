@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"अनुमतियां अपडेट करें"</string>
+<string name="options_homepage_title">"मुख्यपृष्ठ"</string>
+<string name="autofill_from_google_account">"Google पेमेंट्स"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome सिंक"</string>
+<string name="sync_confirmation_chrome_sync_message">"आपके बुकमार्क, इतिहास, पासवर्ड और अन्य सेटिंग को आपके Google खाते में समन्वयित किया जाएगा ताकि आप उनका उपयोग अपने सभी डिवाइस पर कर सकें"</string>
+<string name="sync_confirmation_personalize_services_title">"Google सेवाओं को वैयक्तिकृत करें"</string>
+<string name="sync_confirmation_personalize_services_body">"खोज, विज्ञापन और अन्य Google सेवाओं को वैयक्तिकृत करने के लिए Google आपके ब्राउज़िंग इतिहास का उपयोग कर सकता है"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"सिंक को आपके व्यवस्थापक ने अक्षम कर दिया है"</string>
+</resources>

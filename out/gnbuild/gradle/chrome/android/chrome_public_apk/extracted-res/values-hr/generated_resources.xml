@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Ažuriraj dopuštenja"</string>
+<string name="options_homepage_title">"Početna stranica"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+<string name="sync_confirmation_chrome_sync_title">"Chrome sinkronizacija"</string>
+<string name="sync_confirmation_chrome_sync_message">"Vaše oznake, povijest, zaporke i ostale postavke sinkronizirat će se s vašim Google računom kako biste ih mogli upotrebljavati na svim svojim uređajima."</string>
+<string name="sync_confirmation_personalize_services_title">"Prilagođavanje Googleovih usluga"</string>
+<string name="sync_confirmation_personalize_services_body">"Google može upotrebljavati vašu povijest pregledavanja za prilagodbu Pretraživanja, oglasa i drugih Googleovih usluga"</string>
+<string name="sync_disabled_confirmation_chrome_sync_title">"Administrator je onemogućio sinkronizaciju"</string>
+</resources>
