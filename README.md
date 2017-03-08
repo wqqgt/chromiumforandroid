@@ -13,7 +13,9 @@ base on chromium 58.0.3015.0 for android, build for android studio(version 2.3)
 
 3. do everything that you want
 
-使用说明
+#使用说明
 1. 安装android studio 2.3 版本
+
 2. 使用android studio 打开 out/gnbuild/gradle目录
+
 3. 编译，升级apk，安装。
